@@ -1,8 +1,55 @@
-# React + Vite
+# To-Do List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive To-Do List application built with React and TailwindCSS.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 18.3.1
+- Vite
+- TailwindCSS 3.4
+- ESLint for code quality
+
+## Project Structure
+
+```
+├── public/             # Static files
+├── src/               # Source files
+│   ├── assets/        # Images and other assets
+│   ├── components/    # Reusable React components
+│   ├── pages/         # Page components
+│   ├── App.jsx        # Main App component
+│   └── main.jsx       # Entry point
+├── index.html         # HTML template
+└── package.json       # Project dependencies and scripts
+```
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Development
+
+This project uses:
+- Vite for fast development and building
+- TailwindCSS for styling
+- ESLint for code quality
+- React 18 with latest features
+
+## License
+
+This project is open source and available under the MIT License.

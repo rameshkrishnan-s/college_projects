@@ -4,18 +4,20 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import Navbar from "./components/Navbar";
+import Profile from "./pages/Profile";
 
 
 const App = () => {
   return (
     <>
-      <Navbar/>
+     
       <BrowserRouter>
+      <Navbar/>
         <Routes>
+          <Route path="/" element={<Home/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/" element={<Home/>} />
-          <Route path="/profile" element={<Profile/>} />
+          <Route path="/profile" element={<Profile/>}/>
         </Routes>
       </BrowserRouter>
     </>

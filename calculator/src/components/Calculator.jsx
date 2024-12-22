@@ -1,20 +1,20 @@
-import React from 'react'
-import Button from './Button'
+import React, { useReducer } from 'react'
 
-const Calculator = () => {
+const Calculator = () => { 
   return (
     <>
-        <div className='calculator-grid'>
-            <div className='output'>
-                <div className='previous-operand'>
-
+        <h1 className='text-center text-2xl font-bold'>CALCULATOR</h1>
+        <div className='calculator-grid grid grid-cols-4 gap-4 bg-black text-white pb-9'>
+            <div className='output m-10 bg-yellow-100 col-span-4'>
+                <div className='previous-operand p-10'>
+                  
                 </div>
-                <div className='current-operand'>
+                <div className='current-operand p-10 '>
 
                 </div>
             </div>
 
-            <button className='sapn-two'>AC</button>
+            <button className='btn-primary'>AC</button>
             <button>/</button>
             <button>CE</button>
             <button>C</button>
@@ -33,7 +33,7 @@ const Calculator = () => {
             <button >+</button>
             <button >0</button>
             <button>.</button>
-            <button>=</button>
+            <button className='btn-primary'>=</button>
         </div>
     </>
   )
